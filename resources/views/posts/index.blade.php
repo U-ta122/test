@@ -12,7 +12,7 @@
             @foreach ($posts as $toko)
                 <dev class="post">
                     <h2 class="title">
-                        {{ $toko->title }}
+                    <a href="/posts/{{ $toko->id }}">{{ $toko->title }}
                     </h2>
                     <p class='body'>{{ $toko->body }}</p>
                     <p >{{ $toko->created_at }}</p>
